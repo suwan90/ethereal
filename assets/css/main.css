@@ -4153,8 +4153,30 @@ body.is-preload #wrapper {
 /* Edits */
 
 #wordmark {
-  width: 800px;
-  margin-top: -110px;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: -2rem 0 1rem 0;
+}
+
+@media (min-width: 600px) {
+  #wordmark {
+    max-width: 400px;
+    margin-top: -3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #wordmark {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #wordmark {
+    max-width: 800px;
+  }
 }
 
 #extra-margin {
